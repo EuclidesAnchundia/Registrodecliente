@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clientes - Tienda de Instrumentos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Clientes</h1>
+        <form>
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Número de teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="ciudad">Ciudad</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+
+            <label for="identificacion">Número de identificación</label>
+            <input type="text" id="identificacion" name="identificacion" required>
+
+            <label for="fecha">Fecha de registro</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="preferencia">Forma de contacto preferida</label>
+            <select id="preferencia" name="preferencia" required>
+                <option value="">Seleccione una opción</option>
+                <option value="telefono">Teléfono</option>
+                <option value="email">Email</option>
+                <option value="whatsapp">WhatsApp</option>
+            </select>
+
+            <button type="submit">Registrar</button>
+        </form>
+        <div class="footer">Negocio de Instrumentos Musicales © 2025</div>
+    </div>
+</body>
+</html>
