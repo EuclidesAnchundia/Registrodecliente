@@ -1,47 +1,94 @@
 <!DOCTYPE html>
+<!-- Define que este archivo es un documento HTML5 -->
+
 <html lang="es">
+<!-- Se especifica que el idioma principal del contenido es español -->
+
 <head>
     <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres como UTF-8 para admitir acentos y caracteres especiales -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que la página sea responsive (adaptable a dispositivos móviles) -->
+
     <title>Registro de Clientes - Tienda de Instrumentos</title>
+    <!-- El título que se mostrará en la pestaña del navegador -->
+
     <link rel="stylesheet" href="estilos.css">
+    <!-- Vincula el archivo de estilos CSS para darle formato visual -->
+
+    <script src="validacion.js" defer></script>
+    <!-- Carga el archivo JavaScript para validaciones. 'defer' hace que se ejecute después de que el HTML se haya cargado -->
 </head>
+
 <body>
+    <!-- Cuerpo del documento HTML -->
+
     <div class="container">
+        <!-- Contenedor principal del contenido para darle estilo y estructura -->
+
         <h1>Registro de Clientes</h1>
-        <form>
+        <!-- Título principal del formulario -->
+
+        <div id="mensajes"></div>
+        <!-- Div vacío donde se mostrarán mensajes de error o éxito -->
+
+        <form id="formularioRegistro">
+            <!-- Formulario con ID para acceder desde JavaScript -->
+
             <label for="nombre">Nombre completo</label>
+            <!-- Etiqueta para el campo de nombre -->
             <input type="text" id="nombre" name="nombre" required>
+            <!-- Campo de texto obligatorio para el nombre -->
 
             <label for="email">Correo electrónico</label>
+            <!-- Etiqueta para el campo de correo -->
             <input type="email" id="email" name="email" required>
+            <!-- Campo de tipo email obligatorio -->
 
             <label for="telefono">Número de teléfono</label>
+            <!-- Etiqueta para el campo de teléfono -->
             <input type="tel" id="telefono" name="telefono" required>
+            <!-- Campo de teléfono obligatorio -->
 
             <label for="direccion">Dirección</label>
+            <!-- Etiqueta para la dirección -->
             <input type="text" id="direccion" name="direccion" required>
+            <!-- Campo de texto obligatorio -->
 
             <label for="ciudad">Ciudad</label>
+            <!-- Etiqueta para la ciudad -->
             <input type="text" id="ciudad" name="ciudad" required>
+            <!-- Campo de texto obligatorio -->
 
             <label for="identificacion">Número de identificación</label>
+            <!-- Etiqueta para identificación -->
             <input type="text" id="identificacion" name="identificacion" required>
+            <!-- Campo obligatorio de identificación personal -->
 
             <label for="fecha">Fecha de registro</label>
+            <!-- Etiqueta para la fecha -->
             <input type="date" id="fecha" name="fecha" required>
+            <!-- Campo obligatorio de tipo fecha -->
 
             <label for="preferencia">Forma de contacto preferida</label>
+            <!-- Etiqueta para el campo select -->
             <select id="preferencia" name="preferencia" required>
+                <!-- Menú desplegable obligatorio -->
                 <option value="">Seleccione una opción</option>
+                <!-- Opción vacía inicial obligatoria -->
                 <option value="telefono">Teléfono</option>
                 <option value="email">Email</option>
                 <option value="whatsapp">WhatsApp</option>
+                <!-- Opciones reales del usuario -->
             </select>
 
             <button type="submit">Registrar</button>
+            <!-- Botón para enviar el formulario -->
         </form>
+
         <div class="footer">Negocio de Instrumentos Musicales © 2025</div>
+        <!-- Pie de página con información de derechos -->
     </div>
 </body>
 </html>
